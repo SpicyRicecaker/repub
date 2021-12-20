@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Dev",
+            "type": "shell",
+            "command": "yarn tauri dev",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Debug Binary",
+            "type": "shell",
+            "command": "yarn tauri build --debug",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Release Binary",
+            "type": "shell",
+            "command": "yarn tauri build",
+            "problemMatcher": []
+        }
+    ]
+}
